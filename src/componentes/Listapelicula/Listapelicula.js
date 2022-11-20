@@ -31,23 +31,14 @@ return (
 
 
 <p className="run-time">
-Duracion: {props.duracion}<br />
-Clasificacion: {props.clasificacion}<br />
-Estreno: {props.fechaestreno}
+Duracion: {props.duracion} Clasificacion: {props.clasificacion} Estreno: {props.fechaestreno}
 </p>
 
 
 <p>
-Director: <a href="https://google.com">
-{props.director}
-</a>
+Director: <a href="https://google.com">{props.director}</a>   Protagonista: <a href="https://google.com">{props.protagonista}</a>
 </p>
 
-<p>
-Protagonista: <a href="https://google.com">
-{props.protagonista}
-</a>
-</p>
 
 </div>
 </div>
