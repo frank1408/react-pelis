@@ -4,18 +4,51 @@ import './Listapelicula.css';
 import logo from './logo.svg';
 */
 
-export default function Listapelicula() {
+export default function Listapelicula( props ) {
 return (
 <div className="Listapelicula">{/* root-listapelicula */}
 <div className="movie-item-style-2">
-<img src="images/uploads/mv1.jpg" alt="" />
+<img src={props.caratula} alt="caratula de pelicula" />
 <div className="mv-item-infor">
-<h6><a href="moviesingle.html">oblivion <span>(2012)</span></a></h6>
-<p className="rate"><i className="ion-android-star"></i><span>8.1</span> /10</p>
-<p className="describe">Earth's mightiest heroes must come together and learn to fight as a team if they are to stop the mischievous Loki and his alien army from enslaving humanity...</p>
-<p className="run-time"> Run Time: 2h21’    .     <span>MMPA: PG-13 </span>    .     <span>Release: 1 May 2015</span></p>
-<p>Director: <a href="https://google.com">Joss Whedon</a></p>
-<p>Stars: <a href="https://google.com">Robert Downey Jr.,</a> <a href="https://google.com">Chris Evans,</a> <a href="https://google.com">Chris Hemsworth</a></p>
+
+<h6>
+<a href="moviesingle.html">
+{props.titulo}
+</a>
+</h6>
+
+<p className="rate">
+{props.estrellas}
+<i className="ion-android-star"></i>
+<i className="ion-android-star"></i>
+<i className="ion-android-star"></i>
+</p>
+
+
+<p className="describe">
+{props.descripcion}
+</p>
+
+
+<p className="run-time">
+Duracion: {props.duracion}<br />
+Clasificacion: {props.clasificacion}<br />
+Estreno: {props.fechaestreno}
+</p>
+
+
+<p>
+Director: <a href="https://google.com">
+{props.director}
+</a>
+</p>
+
+<p>
+Protagonista: <a href="https://google.com">
+{props.protagonista}
+</a>
+</p>
+
 </div>
 </div>
 
