@@ -13,6 +13,8 @@ return (
 <div className="container">
 <div className="row ipad-width2">
 <div className="col-md-8 col-sm-12 col-xs-12">
+<br />
+<br />
 {props.children}
 </div>
 </div>

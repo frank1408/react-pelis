@@ -18,7 +18,7 @@ return (
 </h6>
 
 <p className="rate">
-{props.estrellas}
+{props.genero} {props.estrellas} 
 <i className="ion-android-star"></i>
 <i className="ion-android-star"></i>
 <i className="ion-android-star"></i>

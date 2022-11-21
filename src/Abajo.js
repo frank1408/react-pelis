@@ -12,10 +12,12 @@ return (
 <div className="container">
 <div className="flex-parent-ft">
 <div className="flex-child-ft item1">
-<a href="index-2.html"><img className="logo" src="images/logo1.png" alt="" /></a>
+<a href="https://google.com">
+ <img className="logo" src="images/logo.png" alt="logo-empresarial" width="108px" />
+</a>
 
 <p>
-<a href="index-2.html">
+<a href="https://google.com">
 18 Avenida, 5-25 Zona 1 NombreDeColonia<br />
 Guatemala, Guatemala
 </a>
