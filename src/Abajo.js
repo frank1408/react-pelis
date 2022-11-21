@@ -1,29 +1,52 @@
 
+/*
 import './Abajo.css';
+*/
 
 export default function Abajo() {
 return (
-<div className="Abajo">{/* root-Abajo */}
+<div className="container-fluid bg-dark text-light fs-5">{/* root-Abajo */}
+<div className="row">
 
-<div>
-<p>Direccion</p>
-<a href="https://google.com">
-18 Avenida 5-25 Zona 10 NOMBRE-DE-COLONIA<br />Guatemala, Guatemala
+<div className="col p-5 text-center">
+
+<p>
+<a href="/index.html" className="text-decoration-none" >
+<img src="images/logo.png" alt="logo" height="90px" />
 </a>
+</p>
+
+<p>
+<a href="https://google.com" className="text-center text-light text-decoration-none">
+<br/>18 Avenida 5-25
+<br/>Zona 10 NOMBRE-DE-COLONIA
+<br/>Guatemala, Guatemala
+</a>
+</p>
 </div>
 
-<div>
-<p>Contactenos</p>
-<a href="tel:+50212341234">Via telefonica</a>
-<a href="mailto:alguien@gmail.com">Via correo electronico</a>
+
+<div className="col p-5 text-center">
+<p>
+<a href="tel:+50212341234" className="text-light text-decoration-none">Contacto telefonico</a>
+</p>
+
+<p>
+<a href="mailto:alguien@gmail.com" className="text-light text-decoration-none">Contacto electronico</a>
+</p>
+
+<p>
+<a href="https://google.com" className="text-light text-decoration-none">Terminos de uso</a>
+</p>
+
+<p>
+<a href="https://google.com" className="text-light text-decoration-none">Politica de privacidad</a>
+</p>
+
 </div>
 
-<div>
-<p>Legal</p>
-<a href="https://google.com">Terminos de uso</a>
-<a href="https://google.com">Politica de privacidad</a>
-</div>
 
+{/* row */}</div>
 {/* root-Abajo */}</div>);
 }
 

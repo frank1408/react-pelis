@@ -1,50 +1,26 @@
 [
 {
 "titulo": "resident evil",
-"descripcion": "En un centro clandestino de investigación genética, se produce un virus mortal. Para contener la fuga, se cierra toda la instalación y se cree que mueren todos los empleados, pero en realidad se convierten en zombis.",
-"duracion": "1:59:18",
-"clasificacion": "+18",
-"fechaestreno": "2002-03-12",
-"estrellas": 5,
-"director": "Paul W. S. Anderson",
-"protagonista": "Milla Jovovich",
+"caratula": "images/resident-evil.jpg",
 "genero": "terror, accion",
-"caratula": "images/resident-evil.jpg"
-},
-{
-"titulo": "no me sé ninguna",
-"descripcion": "de miedo",
-"duracion": "2:00:00",
-"clasificacion": "+14",
-"fechaestreno": "1957-08-27",
-"estrellas": 5,
-"director": "Gabi Rodriguez",
-"protagonista": "Jacob Martinez",
-"genero": "terror",
-"caratula": "images/no-me-se-ninguna.jpg"
+"edad": "18"
 },
 {
 "titulo": "x-men origenes wolverine",
-"descripcion": "Buscando consuelo de su oscuro pasado Logan, más conocido como Wolverine, parece haber encontrado el amor y la alegría con Kayla Silverfox pero todo cambia cuando ella es asesinada.",
-"duracion": "1:47:00",
-"clasificacion": "+13",
-"fechaestreno": "2009-04-30",
-"estrellas": 5,
-"director": "Gavin Hood",
-"protagonista": "Hugh Jackman",
+"caratula": "images/xmen-origenes-wolverine.jpg",
 "genero": "superheores, ciencia ficcion, accion",
-"caratula": "images/xmen-origenes-wolverine.jpg"
+"edad": "13"
 },
 {
 "titulo": "the fast and the furious",
-"descripcion": "En un embarcadero, un contenedor de carga con el nombre Rodgers en el costado es puesto sobre un camión lleno de valiosa mercancía y listo para ser transportado a su lugar de destino.",
-"duracion": "1:47:00",
-"clasificacion": "+13",
-"fechaestreno": "2001-06-18",
-"estrellas": 5,
-"director": "Rob Cohen",
-"protagonista": "Vin Diesel",
+"caratula": "images/rapidoyfurioso.jpg",
 "genero": "accion, aventura, suspenso",
-"caratula": "images/ff.jpg"
+"edad": "13"
+},
+{
+"titulo": "lost",
+"caratula": "images/lost.jpg",
+"genero": "accion, aventura, suspenso",
+"edad": "10"
 }
 ]
