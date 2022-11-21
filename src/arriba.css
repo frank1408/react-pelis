@@ -1,0 +1,20 @@
+
+.Arriba{
+padding: 18px;
+}
+
+.Arriba img{
+display: inline;
+height: 36px;
+padding: 3px;
+}
+
+.Arriba a{
+display: inline;
+text-decoration: none;
+color: cyan;
+padding: 9px;
+font-size: 27px;
+text-align: center;
+}
+
