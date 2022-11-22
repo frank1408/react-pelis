@@ -3,7 +3,7 @@ import './Arriba.css';
 
 export default function Arriba() {
 return (
-<div className="container-fluid bg-dark    text-light p-5">{/* root-Arriba */}
+<div className="container-fluid bg-dark text-center text-light p-5">{/* root-Arriba */}
 
 <a href="/index.html" className="text-decoration-none" >
 <img src="images/logo.png" alt="logo" height="54px" />
