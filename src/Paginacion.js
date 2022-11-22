@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-/* import './Paginacion.css'; */
+import './Paginacion.css';
 
 export default function Paginacion(props) {
 
@@ -22,7 +22,7 @@ return (
 <div className="container-fluid bg-dark text-light fs-5">{/* root-Paginacion */}
 <div className="row text-center p-5">
 
-<div className="col">
+<div className="col fs-3">
 Paginas: {getPaginas()}
 {/* col */}</div>
 
