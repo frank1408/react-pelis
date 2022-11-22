@@ -2,9 +2,13 @@
 import Arriba from './Arriba';
 import Abajo from './Abajo';
 import Listapelicula from './Listapelicula';
+import Paginacion from './Paginacion';
 import arraypeliculas from './infoPeliculas.json';
+import { useState } from 'react';
 
 export default function Peliculasite() {
+
+const [paginaActual, setPaginaActual] = useState(1);
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
@@ -27,6 +31,20 @@ arraypeliculas.map(
 ) /* arraypeliculas.map */
 }
 {/* row */}</div>
+
+
+
+
+<Paginacion
+	pagina={paginaActual}
+	total={4}
+	onChange={ (ppagina) => {
+			setPaginaActual(ppagina)
+		}
+	}
+/>
+
+
 
 
 <div className="row">
