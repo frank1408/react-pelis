@@ -12,7 +12,7 @@
 "caratula": "images/xmen-origenes-wolverine.jpg",
 "genero": "superheores, ciencia ficcion, accion",
 "edad": "13",
-"estrellas": 5,
+"estrellas": 4,
 "id": 2
 },
 {
@@ -28,7 +28,7 @@
 "caratula": "images/lost.jpg",
 "genero": "accion, aventura, suspenso",
 "edad": "10",
-"estrellas": 5,
+"estrellas": 10,
 "id": 4
 },
 {
@@ -36,7 +36,7 @@
 "caratula": "images/american-pie.jpg",
 "genero": "accion, aventura",
 "edad": "18",
-"estrellas": 5,
+"estrellas": 7,
 "id": 5
 },
 {
@@ -44,7 +44,7 @@
 "caratula": "images/el-transportador.jpg",
 "genero": "accion, aventura",
 "edad": "13",
-"estrellas": 5,
+"estrellas": 8,
 "id": 6
 },
 {
@@ -52,7 +52,7 @@
 "caratula": "images/viernes-13.jpg",
 "genero": "accion, aventura",
 "edad": "13",
-"estrellas": 5,
+"estrellas": 9,
 "id": 7
 },
 {
@@ -60,7 +60,7 @@
 "caratula": "images/jason-bourne.jpg",
 "genero": "accion, aventura",
 "edad": "13",
-"estrellas": 5,
+"estrellas": 8,
 "id": 8
 },
 {
@@ -68,7 +68,7 @@
 "caratula": "images/capitan-america.jpg",
 "genero": "accion, aventura",
 "edad": "8",
-"estrellas": 5,
+"estrellas": 7,
 "id": 9
 }
 ]
