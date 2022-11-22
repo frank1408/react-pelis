@@ -1,8 +1,6 @@
 
 import { useState } from 'react';
-/*
-import './Paginacion.css';
-*/
+/* import './Paginacion.css'; */
 
 export default function Paginacion(props) {
 
@@ -13,7 +11,7 @@ for( var i = 0; i < props.total; i++ ){
 let lapagina = i + 1;  resultado.push(
 	<a onClick={ () => { props.onChange(lapagina) }}
 	className={ props.pagina === lapagina ? "text-danger text-decoration-none" : "text-light text-decoration-none"}
-	key={i+1}>
+	key={i}>
 	{lapagina}
 	</a>
 );} return resultado;
