@@ -5,7 +5,7 @@ import Abajo from './Abajo';
 import Detallepelicula from './Detallepelicula';
 import Paginacion from './Paginacion';
 import { useState } from 'react';
-import arraypeliculas from './infoPeliculas.json';
+import arr from './infoPeliculas.json';
 
 export default function Website() {
 
@@ -13,15 +13,18 @@ const [paginaActual, setPaginaActual] = useState(1);
 const [itemxpag, setItemxpag] = useState(2);
 const [paginas, setPaginas] = useState(2);
 
-let arr = arraypeliculas;
+const totalpaginas = Math.floor( arr.length / itemxpag ); 
 
-/*
-setPaginas( arr.length / itemxpag );
-*/
+console.log( totalpaginas );
+
+
+
 
 let pp = [2];
-pp[0] = arr.slice(0, 2);
-pp[1] = arr.slice(2, arr.length);
+pp[0] = arr.slice(0, itemxpag);
+pp[1] = arr.slice(itemxpag, arr.length);
+
+
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
@@ -49,7 +52,6 @@ return (
 {
 
 pp[paginaActual-1].map(
-/* arraypeliculas.map( */
 	lapeli =>
 		<Detallepelicula
 			key={lapeli.id}
@@ -59,7 +61,7 @@ pp[paginaActual-1].map(
 			edad={lapeli.edad}
 			estrellas={lapeli.estrellas}
 		/>/* detallePelicula */
-) /* arraypeliculas.map */
+) /* array.map */
 }
 {/* row */}</div>
 

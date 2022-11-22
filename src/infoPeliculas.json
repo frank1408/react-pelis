@@ -30,5 +30,42 @@
 "edad": "10",
 "estrellas": 5,
 "id": 4
+},
+{
+"titulo": "american pie",
+"caratula": "images/american-pie.jpg",
+"genero": "accion, aventura",
+"edad": "18",
+"estrellas": 5,
+"id": 5
+},
+{
+"titulo": "el transportador",
+"caratula": "images/el-transportador.jpg",
+"genero": "accion, aventura",
+"edad": "13",
+"estrellas": 5,
+"id": 6
+},
+{
+"titulo": "viernes 13",
+"caratula": "images/viernes-13.jpg",
+"genero": "accion, aventura",
+"edad": "13",
+"estrellas": 5,
+"id": 7
+},
+{
+"titulo": "Jason Bourne",
+"caratula": "images/jason-bourne.jpg",
+"genero": "accion, aventura",
+"edad": "13",
+"estrellas": 5,
+"id": 8
 }
+
+
+
+
+
 ]
