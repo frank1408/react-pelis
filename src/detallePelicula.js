@@ -22,8 +22,8 @@ return (
 <p className="fs-5">
 Para público de {props.edad} años en adelante.
 <br />Genero: {props.genero}
-<br /><Calidad n={props.estrellas} />
 </p>
+<br /><Calidad n={props.estrellas} />
 </div>{/* col */}
 
 {/* row */}</div>

@@ -8,7 +8,7 @@ export default function Calidad(props) {
 let items = [];
 for( let i = 0; i < props.n; i++ ){
 items.push(
-<i className="bi bi-star-fill"></i>
+<i key={i*i*2} className="bi bi-star-fill"></i>
 );
 }
 
