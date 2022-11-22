@@ -4,27 +4,31 @@
 "caratula": "images/resident-evil.jpg",
 "genero": "terror, accion",
 "edad": "18",
-"estrellas": 5
+"estrellas": 5,
+"id": 1
 },
 {
 "titulo": "x-men origenes wolverine",
 "caratula": "images/xmen-origenes-wolverine.jpg",
 "genero": "superheores, ciencia ficcion, accion",
 "edad": "13",
-"estrellas": 5
+"estrellas": 5,
+"id": 2
 },
 {
 "titulo": "the fast and the furious",
 "caratula": "images/rapidoyfurioso.jpg",
 "genero": "accion, aventura, suspenso",
 "edad": "13",
-"estrellas": 5
+"estrellas": 5,
+"id": 3
 },
 {
 "titulo": "lost",
 "caratula": "images/lost.jpg",
 "genero": "accion, aventura, suspenso",
 "edad": "10",
-"estrellas": 5
+"estrellas": 5,
+"id": 4
 }
 ]

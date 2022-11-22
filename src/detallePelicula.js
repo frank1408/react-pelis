@@ -1,9 +1,9 @@
 
 /*
-import './Listapelicula.css';
+import './Detallepelicula.css';
 */
 
-export default function Listapelicula( props ) {
+export default function Detallepelicula( props ) {
 return (
 <div className="container-fluid bg-dark text-light">{/* root-listapelicula */}
 <div className="row p-5">
@@ -24,7 +24,7 @@ Para público de {props.edad} años en adelante.
 {/* col */}</div>
 
 {/* row */}</div>
-{/* root-listapelicula */}</div>
+{/* root-Detallepelicula */}</div>
 );
 }
 

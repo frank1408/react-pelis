@@ -8,21 +8,15 @@ export default function Paginacion(props) {
 
 const [paginactual, setPaginactual] = useState(1);
 
-const getPaginas = () => {
-	const resultado = [];
-	for( var i = 0; i < props.total; i++ ){
-	let lapagina = i + 1;
-		resultado.push(
-			<a
-			onClick={ () => {
-				props.onChange(lapagina)
-			}}
-			className={ props.pagina === lapagina ? "text-danger text-decoration-none" : "text-light text-decoration-none"}>
-			{lapagina}
-			</a>
-		);
-	}
-	return resultado;
+const getPaginas = () => { const resultado = [];
+for( var i = 0; i < props.total; i++ ){
+let lapagina = i + 1;  resultado.push(
+	<a onClick={ () => { props.onChange(lapagina) }}
+	className={ props.pagina === lapagina ? "text-danger text-decoration-none" : "text-light text-decoration-none"}
+	key={i+1}>
+	{lapagina}
+	</a>
+);} return resultado;
 } /* getPaginas */
 
 
