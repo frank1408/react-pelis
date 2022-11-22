@@ -5,7 +5,7 @@ import './Abajo.css';
 
 export default function Abajo() {
 return (
-<div className="container-fluid bg-dark text-light fs-5">{/* root-Abajo */}
+<div className="container-fluid bg-black text-light fs-5">{/* root-Abajo */}
 <div className="row">
 
 <div className="col p-5 text-center">

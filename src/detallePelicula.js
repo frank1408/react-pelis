@@ -13,8 +13,9 @@ return (
 <img src={props.caratula} alt="portada de pelicula" width="100%" />
 
 {/* col */}</div>
-<div className="col">
 
+
+<div className="col">
 <h1 className="text-danger text-uppercase fs-3">
 {props.titulo}
 </h1>
@@ -23,7 +24,7 @@ Para público de {props.edad} años en adelante.
 <br />Genero: {props.genero}
 <br /><Calidad n={props.estrellas} />
 </p>
-{/* col */}</div>
+</div>{/* col */}
 
 {/* row */}</div>
 {/* root-Detallepelicula */}</div>
