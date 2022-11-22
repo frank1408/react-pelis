@@ -62,10 +62,13 @@
 "edad": "13",
 "estrellas": 5,
 "id": 8
+},
+{
+"titulo": "Capitan America",
+"caratula": "images/capitan-america.jpg",
+"genero": "accion, aventura",
+"edad": "8",
+"estrellas": 5,
+"id": 9
 }
-
-
-
-
-
 ]

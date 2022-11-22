@@ -10,21 +10,20 @@ import arr from './infoPeliculas.json';
 export default function Website() {
 
 const [paginaActual, setPaginaActual] = useState(1);
-const [itemxpag, setItemxpag] = useState(2);
-const [paginas, setPaginas] = useState(2);
+const [itemxpag, setItemxpag] = useState(3);
+const [paginas, setPaginas] = useState( Math.ceil(arr.length / itemxpag) );
 
-const totalpaginas = Math.floor( arr.length / itemxpag ); 
-
-console.log( totalpaginas );
-
-
-
-
-let pp = [2];
-pp[0] = arr.slice(0, itemxpag);
-pp[1] = arr.slice(itemxpag, arr.length);
-
-
+let inicio = 0;
+if( paginaActual == 1 ){
+	inicio = 0;
+}
+if( paginaActual == 2 ){
+	inicio = 3;
+}
+if( paginaActual == 3 ){
+	inicio = 6;
+}
+let arr2 = arr.slice( inicio, itemxpag * paginaActual );
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
@@ -37,7 +36,7 @@ return (
 <div className="row">
 <Paginacion
 	pagina={paginaActual}
-	key={paginaActual}
+	key={"arriba"}
 	total={paginas}
 	onChange={ (ppagina) => {
 			setPaginaActual(ppagina)
@@ -50,8 +49,7 @@ return (
 <div className="row">
 {/* recorrer array y desplegar sus datos */}
 {
-
-pp[paginaActual-1].map(
+arr2.map(
 	lapeli =>
 		<Detallepelicula
 			key={lapeli.id}
@@ -71,7 +69,7 @@ pp[paginaActual-1].map(
 <div className="row">
 <Paginacion
 	pagina={paginaActual}
-	key={paginaActual}
+	key={"abajo"}
 	total={paginas}
 	onChange={ (ppagina) => {
 			setPaginaActual(ppagina)
