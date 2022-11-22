@@ -13,17 +13,18 @@ const [paginaActual, setPaginaActual] = useState(1);
 const [itemxpag, setItemxpag] = useState(3);
 const [paginas, setPaginas] = useState( Math.ceil(arr.length / itemxpag) );
 
-let inicio = 0;
-if( paginaActual == 1 ){
-	inicio = 0;
-}
-if( paginaActual == 2 ){
-	inicio = 3;
-}
-if( paginaActual == 3 ){
-	inicio = 6;
-}
-let arr2 = arr.slice( inicio, itemxpag * paginaActual );
+
+const getInicio = ( pagAct ) => {
+	if( pagAct == 1 ){ return 0; }
+	if( pagAct == 2 ){ return 3; }
+	if( pagAct == 3 ){ return 6; }
+} /* getInicio */
+
+
+let arr2 = arr.slice(
+	getInicio(paginaActual),
+	itemxpag * paginaActual
+);
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
