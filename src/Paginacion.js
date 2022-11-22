@@ -10,7 +10,7 @@ const getPaginas = () => { const resultado = [];
 for( var i = 0; i < props.total; i++ ){
 let lapagina = i + 1;  resultado.push(
 	<a onClick={ () => { props.onChange(lapagina) }}
-	className={ props.pagina === lapagina ? "text-danger text-decoration-none" : "text-light text-decoration-none"}
+	className={ props.pagina === lapagina ? "p-3 text-danger text-decoration-none" : "p-3 text-light text-decoration-none"}
 	key={i}>
 	{lapagina}
 	</a>
