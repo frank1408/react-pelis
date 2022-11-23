@@ -9,15 +9,15 @@ import arr from './infoPeliculas.json';
 
 export default function Website() {
 
-const [paginaActual, setPaginaActual] = useState(1);
-const [itemxpag, setItemxpag] = useState(3);
-const [paginas, setPaginas] = useState( Math.ceil(arr.length / itemxpag) );
 
+const [paginaActual, setPaginaActual] = useState(1);
+const itemxpag = 3;
+const paginas = Math.ceil(arr.length / itemxpag);
 
 const getInicio = ( pagAct ) => {
-	if( pagAct == 1 ){ return 0; }
-	if( pagAct == 2 ){ return 3; }
-	if( pagAct == 3 ){ return 6; }
+	if( pagAct === 1 ){ return 0; }
+	if( pagAct === 2 ){ return 3; }
+	if( pagAct === 3 ){ return 6; }
 } /* getInicio */
 
 
@@ -25,6 +25,32 @@ let arr2 = arr.slice(
 	getInicio(paginaActual),
 	itemxpag * paginaActual
 );
+
+
+/*
+no se usa por el momento, hay una copia local de peliculas.json
+*/
+const buscarPelicula = async () => {
+	const URL = "http://localhost:3000/peliculas";
+	try{
+		const ans = await fetch(
+			URL, {
+				"method": "GET",
+				"headers": {
+					"Accept": "application/json",
+					"Content-Type": "application/json",
+				}, /* headers */
+			} /* obj method, headers */
+		); /* fetch */
+		const aans = await ans.json();
+		console.log( aans );
+	} catch( err ){
+		/*console.log( "error: " + err );*/
+	} /* catch */
+} /* buscarPelicula */
+/*
+no se usa por el momento, hay una copia local de peliculas.json
+*/
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
@@ -40,7 +66,7 @@ return (
 	key={"arriba"}
 	total={paginas}
 	onChange={ (ppagina) => {
-			setPaginaActual(ppagina)
+			setPaginaActual(ppagina);
 		}
 	}
 />
