@@ -1,14 +1,15 @@
 
 
+import React from 'react';
 import Arriba from './Arriba';
 import Abajo from './Abajo';
 import Detallepelicula from './Detallepelicula';
 import Paginacion from './Paginacion';
-import Fila from './Fila';
 import { useState } from 'react';
 import arr from './infoPeliculas.json';
-import React from 'react';
+/*
 import ReactDOM from 'react-dom/client';
+*/
 
 export default function Website() {
 
@@ -33,42 +34,7 @@ let arr2 = arr.slice(
 	itemxpag * paginaActual
 );
 
-const buscarPeliculas = () => {
 
-alert("prueba");
-const root = ReactDOM.createRoot( document.getElementById('root') );
-root.render(
-<React.StrictMode>
-<Fila />
-</React.StrictMode>
-);
-
-}
-
-/*
-no se usa por el momento, hay una copia local de peliculas.json
-*/
-const buscarPelicula = async () => {
-	const URL = "http://localhost:3000/peliculas";
-	try{
-		const ans = await fetch(
-			URL, {
-				"method": "GET",
-				"headers": {
-					"Accept": "application/json",
-					"Content-Type": "application/json",
-				}, /* headers */
-			} /* obj method, headers */
-		); /* fetch */
-		const aans = await ans.json();
-		console.log( aans );
-	} catch( err ){
-		/*console.log( "error: " + err );*/
-	} /* catch */
-} /* buscarPelicula */
-/*
-no se usa por el momento, hay una copia local de peliculas.json
-*/
 
 return (
 <div className="container-fluid bg-dark text-light">{/* root-peliculasite */}
@@ -78,20 +44,19 @@ return (
 {/* row */}</div>
 
 
-<div className="row">
-<button onClick={buscarPeliculas}>Prueba</button>
-{/* row */}</div>
 
 <div className="row">
-<Paginacion
-	pagina={paginaActual}
-	key={"arriba"}
-	total={paginas}
-	onChange={ (ppagina) => {
-			setPaginaActual(ppagina);
+<div className="col">
+	<Paginacion
+		pagina={paginaActual}
+		key={"arriba"}
+		total={paginas}
+		onChange={ (ppagina) => {
+				setPaginaActual(ppagina);
+			}
 		}
-	}
-/>
+	/>	
+{/* col */}</div>
 {/* row */}</div>
 
 
