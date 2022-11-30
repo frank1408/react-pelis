@@ -2,35 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Website from './Website';
 import Pagpeliculas from './Pagpeliculas';
-import Pagportadas from './Pagportadas';
 import Error from "./Error";
 import "./index.css";
 
-/* para enrutamiento */
 import {
 createBrowserRouter,
 RouterProvider,
-Route,
 } from "react-router-dom";
-/* para enrutamiento */
 
 const routerr = createBrowserRouter([
 {
 path: "/",
-element:
-<Website>
-<Pagpeliculas />
-</Website>
-,
-errorElement: <Error />,
-},/* root */
+element: <Website/>,
+errorElement: <Website><Error /></Website>,
+},
 {
 path: "/peliculas",
-element: 
-<Website>
-<Pagportadas />
-</Website>
-},/* peliculas */
+element: <Website><Pagpeliculas /></Website>
+},
 ]);
 
 

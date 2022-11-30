@@ -1,18 +1,15 @@
 
+
+
 import { useRouteError } from "react-router-dom";
-import Website from './Website';
+import './Error.css';
 
 export default function Error() {
 	const error = useRouteError();
 	return (
-	<Website>
-	<div className="text-center">
-	<h1>
+	<h1 id="Errorpage" className="text-center">
 	{error.statusText || error.message}
 	</h1>
-	Sorry
-	</div>
-	</Website>
 	);
 } /* Error */
 

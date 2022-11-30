@@ -5,48 +5,45 @@ import './Abajo.css';
 
 export default function Abajo() {
 return (
-<div className="container-fluid bg-black text-light fs-5">{/* root-Abajo */}
+<div>{/* Abajo */}
 <div className="row">
 
 <div className="col p-5 text-center">
 
-<p>
-<a href="/index.html" className="text-decoration-none" >
+<p className="">
 <img src="images/logo.png" alt="logo" height="90px" />
-</a>
 </p>
 
 <p>
-<a href="https://google.com" className="text-center text-light text-decoration-none">
 <br/>18 Avenida 5-25
-<br/>Zona 10 NOMBRE-DE-COLONIA
+<br/>Zona 10 Nombre-de-colonia
 <br/>Guatemala, Guatemala
-</a>
 </p>
+
 </div>
 
 
 <div className="col p-5 text-center">
 <p>
-<a href="tel:+50212341234" className="text-light text-decoration-none">Contacto telefonico</a>
+Contacto telefonico
 </p>
 
 <p>
-<a href="mailto:alguien@gmail.com" className="text-light text-decoration-none">Contacto electronico</a>
+Contacto electronico
 </p>
 
 <p>
-<a href="https://google.com" className="text-light text-decoration-none">Terminos de uso</a>
+Terminos de uso
 </p>
 
 <p>
-<a href="https://google.com" className="text-light text-decoration-none">Politica de privacidad</a>
+Politica de privacidad
 </p>
 
 </div>
 
 
 {/* row */}</div>
-{/* root-Abajo */}</div>);
+{/* Abajo */}</div>);
 }
 

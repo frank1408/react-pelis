@@ -1,8 +1,8 @@
 
 /* import './pagPeliculas.css'; */
 import React from 'react';
-import { useState } from 'react'; /* hook */
-import { useEffect } from 'react'; /* hook */
+import { useState } from 'react';
+/* import { useEffect } from 'react'; */
 /* import ReactDOM from 'react-dom/client'; */
 
 import Detallepelicula from './Detallepelicula';
@@ -30,13 +30,6 @@ useEffect( () => {
 
 */
 
-useEffect( () => {
-	console.log("pagina actual cambio");
-}, []);
-
-
-
-
 const itemxpag = 3;
 const paginas = Math.ceil(arr.length / itemxpag);
 
@@ -56,21 +49,8 @@ let arr2 = arr.slice(
 
 
 return (
-<div>{/* pagPeliculas */}
+<div className="row">{/* pagPeliculas */}
 
-	<Paginacion
-		pagina={paginaActual}
-		key={"arriba"}
-		total={paginas}
-		onChange={ (ppagina) => {
-				setPaginaActual(ppagina);
-			}
-		}
-	/>	
-
-
-<div className="row">
-<div className="col">
 {/* recorrer array y desplegar sus datos */}
 {
 arr2.map(
@@ -85,11 +65,6 @@ arr2.map(
 		/>/* detallePelicula */
 ) /* array.map */
 }
-{/* col */}</div>
-{/* row */}</div>
-
-
-
 
 <Paginacion
 	pagina={paginaActual}

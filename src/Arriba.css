@@ -1,6 +1,12 @@
 
-.container-fluid a{
+
+
+#myheader{
+text-align: center;
+padding: 27px;
+}
+#myheader > a{
 display: inline;
-margin-left: 27px;
+margin-left: 30px;
 }
 
