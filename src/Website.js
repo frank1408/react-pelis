@@ -1,18 +1,15 @@
 
 
 import React from 'react';
+import { useState } from 'react';
+/* import ReactDOM from 'react-dom/client'; */
 import Arriba from './Arriba';
 import Abajo from './Abajo';
 import Detallepelicula from './Detallepelicula';
 import Paginacion from './Paginacion';
-import { useState } from 'react';
 import arr from './infoPeliculas.json';
-/*
-import ReactDOM from 'react-dom/client';
-*/
 
 export default function Website() {
-
 
 const [paginaActual, setPaginaActual] = useState(1);
 /*
