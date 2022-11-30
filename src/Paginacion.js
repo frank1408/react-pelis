@@ -19,14 +19,10 @@ let lapagina = i + 1;  resultado.push(
 
 
 return (
-<div className="container-fluid bg-black text-light">{/* root-Paginacion */}
-<div className="row text-center p-3">
+<div className="text-center fs-4 p-4">{/* root-Paginacion */}
 
-<div className="col fs-4">
 {getPaginas()}
-{/* col */}</div>
 
-{/* row */}</div>
 {/* root-Paginacion */}</div>);
 }
 
