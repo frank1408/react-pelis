@@ -1,8 +1,10 @@
 
 
 import React from 'react';
-import { useState } from 'react';
+import { useState } from 'react'; /* hook */
+import { useEffect } from 'react'; /* hook */
 /* import ReactDOM from 'react-dom/client'; */
+
 import Arriba from './Arriba';
 import Abajo from './Abajo';
 import Detallepelicula from './Detallepelicula';
@@ -12,10 +14,30 @@ import arr from './infoPeliculas.json';
 export default function Website() {
 
 const [paginaActual, setPaginaActual] = useState(1);
+
 /*
-const [informacion, setInformacion] = useState( [] );
-... setInformacion( arr );
+cada vez que cambie el valor
+de "paginaActual" se ejecuta la funcion
+useEffect( () => {
+	console.log("pagina actual cambio");
+}, [paginaActual]);
+
+
+se ejecuta 1 vez al cargar la pagina
+useEffect( () => {
+	console.log("pagina actual cambio");
+}, []);
+
+
 */
+
+useEffect( () => {
+	console.log("pagina actual cambio");
+}, []);
+
+
+
+
 const itemxpag = 3;
 const paginas = Math.ceil(arr.length / itemxpag);
 
