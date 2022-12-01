@@ -1,7 +1,5 @@
 
-/*
-import './Abajo.css';
-*/
+/* import './Abajo.css'; */
 
 export default function Abajo() {
 return (
@@ -9,10 +7,6 @@ return (
 <div className="row">
 
 <div className="col p-5 text-center">
-
-<p className="">
-<img src="images/logo.png" alt="logo" height="90px" />
-</p>
 
 <p>
 <br/>18 Avenida 5-25

@@ -6,12 +6,11 @@ import Calidad from './Calidad';
 
 export default function Detallepelicula( props ) {
 return (
-<div className="container-fluid bg-dark text-light">{/* root-listapelicula */}
-<div className="row pt-3">
+<div>{/* Detallepelicula */}
+<div className="row pt-5">
 
 <div className="col">
 <img src={props.caratula} alt="portada de pelicula" width="100%" />
-
 {/* col */}</div>
 
 
@@ -27,7 +26,7 @@ Para público de {props.edad} años en adelante.
 </div>{/* col */}
 
 {/* row */}</div>
-{/* root-Detallepelicula */}</div>
+{/* Detallepelicula */}</div>
 );
 }
 

@@ -1,8 +1,4 @@
 
-/*
-import './Calidad.css';
-*/
-
 export default function Calidad(props) {
 
 let items = [];
@@ -12,8 +8,6 @@ items.push(
 );
 }
 
-return ( <div>{/* Calidad */}
-{items}
-{/* Calidad */}</div>);
+return (<div>{items}</div>);
 }
 

@@ -1,5 +1,4 @@
 
-/* import './pagPeliculas.css'; */
 import React from 'react';
 import { useState } from 'react';
 /* import { useEffect } from 'react'; */
@@ -11,24 +10,7 @@ import arr from './infoPeliculas.json';
 
 export default function Pagpeliculas() {
 
-
 const [paginaActual, setPaginaActual] = useState(1);
-
-/*
-cada vez que cambie el valor
-de "paginaActual" se ejecuta la funcion
-useEffect( () => {
-	console.log("pagina actual cambio");
-}, [paginaActual]);
-
-
-se ejecuta 1 vez al cargar la pagina
-useEffect( () => {
-	console.log("pagina actual cambio");
-}, []);
-
-
-*/
 
 const itemxpag = 3;
 const paginas = Math.ceil(arr.length / itemxpag);
@@ -49,9 +31,7 @@ let arr2 = arr.slice(
 
 
 return (
-<div className="row">{/* pagPeliculas */}
-
-{/* recorrer array y desplegar sus datos */}
+<div>
 {
 arr2.map(
 	lapeli =>
@@ -76,6 +56,6 @@ arr2.map(
 	}
 />
 
-{/* Pagpeliculas */}</div>);
+</div>);
 }
 

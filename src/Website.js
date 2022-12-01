@@ -8,11 +8,13 @@ import Abajo from './Abajo';
 export default function Website(props) {
 
 return (
-<div className="container-fluid bg-black text-light">{/* Website */}
+<div className="container-fluid">{/* Website */}
 
 <Arriba />
 
+<div id="ccontenido">
 {props.children}
+</div>
 
 <Abajo />
 
