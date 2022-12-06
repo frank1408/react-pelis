@@ -12,18 +12,16 @@ let lapagina = i + 1;  resultado.push(
 	<a onClick={ () => { props.onChange(lapagina) }}
 	className={ props.pagina === lapagina ? "p-3 text-danger text-decoration-none" : "p-3 text-light text-decoration-none"}
 	key={i}>
-	PAG {lapagina}
+	{lapagina}
 	</a>
 );} return resultado;
 } /* getPaginas */
 
 
 return (
-<div className="text-center fs-4 p-4">{/* root-Paginacion */}
-
+<div className="text-center fs-4 p-4">{/* Paginacion */}
 {getPaginas()}
-
-{/* root-Paginacion */}</div>);
+{/* Paginacion */}</div>);
 }
 
 
